@@ -1,0 +1,50 @@
+1. Qual a diferença entre tipagem dinâmica e tipagem estática?
+
+    A checagem de tipo na tipagem dinâmica é feita em tempo de execução.
+    Já na tipagem estática a checagem é feita em tempo de compilação.
+    
+2. Qual o principal problema do uso de tipagem dinâmica?
+    
+    Não há garantias de previsibilidade de tipo em qualquer variável, 
+    levando a uma grande insegurança quanto a que tipo está associado
+    a uma variável.
+
+3. Pesquise um exemplo na internet em que a tipagem dinâmica pode ser
+problemático.
+    
+    const num = "10";
+    const operacao = num + 10; //1010
+    
+    Retirado de: https://www.alura.com.br/artigos/o-que-sao-as-tipagens-estatica-e-dinamica-em-programacao
+
+4. Pesquise e exemplifique com um exemplo porque dizemos que a linguagem C,
+mesmo tendo tipagem estática, possui tipagem fraca.
+    
+    #include <stdio.h>
+
+    int main()
+    {
+        char ascii = 67;
+        printf("%c%",ascii);
+    }
+    
+    No exemplo acima vemos que o tipo char aceita números.
+    
+    Retirado de: https://www.cprogressivo.net/2012/12/O-tipo-char-como-escrever-textos-na-linguagem-C.html
+
+5. Pesquise e, se encontrar, um exemplo onde o tipo any seria benéfico.
+    
+    Example 1: Suppose we want to store the third party data in an array but we don’t know the exact data type of array so we initialize the array of any in TypeScript which will not make any error and we can handle all types of data types. 
+    
+    var New_Array : any[]=[1,"data1"];
+    New_Array.push("data2");
+    New_Array.push(2)
+    New_Array.push("data3");
+    New_Array.push(3)
+    console.log(New_Array)
+
+    Output:
+
+    [1, "data1", "data2", 2, "data3", 3]
+    
+    Retirado de: https://www.geeksforgeeks.org/what-is-any-type-and-when-to-use-it-in-typescript/
