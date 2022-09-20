@@ -48,3 +48,9 @@ mesmo tendo tipagem estática, possui tipagem fraca.
     [1, "data1", "data2", 2, "data3", 3]
     
     Retirado de: https://www.geeksforgeeks.org/what-is-any-type-and-when-to-use-it-in-typescript/
+    
+    6. Poderíamos dizer que a tipagem do TypeScript é fraca por uma variável do tipo
+    number aceitar tanto inteiros como ponto flutuante?
+
+    Não porque o tipo number converte qualquer número em número com ponto flutuante, ou seja,
+    o tipo number é sempre ponto flutuante.
